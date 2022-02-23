@@ -74,7 +74,7 @@
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>2.49.0</version>
+    <version>3.11.0</version>
 </dependency>
 
 
@@ -98,6 +98,14 @@
     <artifactId>slf4j-simple</artifactId>
     <version>2.0.0-alpha6</version>
 </dependency>
+
+<!-- https://mvnrepository.com/artifact/org.jbehave.web/jbehave-web-selenium -->
+<dependency>
+    <groupId>org.jbehave.web</groupId>
+    <artifactId>jbehave-web-selenium</artifactId>
+    <version>3.5.5</version>
+</dependency>
+
 
 	</dependencies>
 

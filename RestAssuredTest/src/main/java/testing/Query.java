@@ -15,17 +15,20 @@ import org.json.simple.JSONObject;
 
 
 public class Query {
+	
+	public static Response response;
+	public static String z;
 
     @Test
-    public void isCEONameMatch() {
+    public static void isCEONameMatch() {
 
-        GraphQLQuery query = new GraphQLQuery();
-        query.setQuery("{ company { name ceo coo } }");
+    	GraphQLQuery check = new GraphQLQuery();
+        check.setQuery("{ company { ceo } }");
         
-        Response response =
+        response =
         given().
             contentType(ContentType.JSON).
-            body(query).
+            body(check).
         when().
             post("https://api.spacex.land/graphql/").
         then().
@@ -41,8 +44,8 @@ public class Query {
 //		System.out.println(response.getHeader("content-type"));
 //		System.out.println(response.getTime());
     	
-    	String z = response.path("data.company.ceo").toString();
-    	System.out.println(z);
+    	z = response.path("data.company.ceo").toString();
+    	System.out.println("extract ceo name: " +z);
     	
         
        
