@@ -18,7 +18,7 @@ public class Demo {
 		driver.get("https://en.wikipedia.org/wiki/SpaceX");
 		WebElement x1 = driver.findElement(By.cssSelector("[title^='Elon Musk']"));
 		String name1 = x1.getText();
-		System.out.println("CEO of SpaceX stated by Wikipedia" +name1);
+		System.out.println("CEO of SpaceX stated by Wikipedia :" +name1);
 		driver.manage().window().maximize();
 //		Thread.sleep(3000);
 //		driver.navigate().to("https://api.spacex.land/graphql/");	    
