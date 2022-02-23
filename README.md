@@ -1,4 +1,8 @@
 - 👋 Hi, I’m @ilhamaditya
+- How to run : 
+1. Go to file Demo.java
+2. Run As TestNG Test
+3. Check the result
 
 <!---
 ilhamaditya/ilhamaditya is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
